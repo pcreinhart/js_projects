@@ -4,25 +4,9 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        
-        
         {
-            "args": [
-                "--extensionDevelopmentPath=${workspaceFolder}"
-            ],
-            "name": "Launch Extension",
-            "outFiles": [
-                "${workspaceFolder}/out/**/*.js"
-            ],
-            "preLaunchTask": "npm",
-            "request": "launch",
-            "runtimeExecutable": "${execPath}",
-            "type": "pwa-extensionHost"
-        },
-
-        {
-            "name": "Attach",
-            "port": 9229,
+            "name": "Attach by Process ID",
+            "processId": "${command:PickProcess}",
             "request": "attach",
             "skipFiles": [
                 "<node_internals>/**"
@@ -36,7 +20,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/e_1.js"
+            "program": "${workspaceFolder}/T1"
         }
     ]
 }
