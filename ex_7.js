@@ -11,3 +11,4 @@ console.log(`Your name is ${name}`);
 console.log(`Your age is ${age}`);
 console.log(`Your eyes are ${eyes}`)
 
+// REQUIRES : npm install readline - sync but I'm trying it without it. 
