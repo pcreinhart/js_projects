@@ -13,3 +13,5 @@ console.log(contents.toString());
 
 console.log ("--------------------------");
 fs.readFile("test.txt",(err, data)=> {console.log(data.toString());});
+
+//you can also put math in the ${} boundaries
